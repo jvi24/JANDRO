@@ -1,0 +1,203 @@
+/* Estilos generales */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("/home/jvi/JANDRO/src/png/white_with_dark_background.png");
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+/* Estilos para el header */
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Estilos para la sección hero */
+.hero {
+	background-image: url("fondo.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	margin-bottom: 10px;
+}
+
+.hero h2 {
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	margin-bottom: 30px;
+}
+
+.boton {
+	display: inline-block;
+	padding: 15px 30px;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 30px;
+	text-decoration: none;
+	box-shadow: 2px 2px 5px #000;
+}
+
+.boton:hover {
+	background-color: #eee;
+	color: #333;
+}
+
+/* Estilos para la sección container */
+.container {
+	padding: 50px;
+}
+
+.container h2 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.container ul {
+	display: flex;
+	list-style: none;
+}
+
+.container li {
+	margin-right: 20px;
+}
+
+.container li:last-child {
+	margin-right: 0;
+}
+
+.container a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 5px #000;
+}
+
+.container span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Estilos para el footer */
+footer {
+	background-color: #eee;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+footer p {
+	color: #666;
+}
+
+/* Estilos para dispositivos móviles */
+@media(max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav li {
+		margin: 10px 0;
+	}
+
+	.hero {
+		height: 400px;
+	}
+
+	.hero h1 {
+		font-size: 40px;
+	}
+
+	.hero h2 {
+		font-size: 30px;
+	}
+
+	.boton {
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+
+	.container {
+		padding: 20px;
+	}
+
+	.container h2 {
+		font-size: 24px;
+		margin-bottom: 10
+	}
+
+	.container img {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 5px;
+	}
+
+	.container span {
+		font-size: 16px;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+}
